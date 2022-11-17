@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SID</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3eafa779ae.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3eafa779ae.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- <img src="sid.png" align="right"> -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="sid1logo.png" class="logo" width="250" height="100" >
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>VLSI Engineer</p>
+                <h1>Hi, I'm <span>Sidhant Priyadarshi</span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------about--------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="dev.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey, I am computer architecture and digital design enthusiast, Pursuing bachelors in Electronics
+                        and Commuication from KLE Technological University. My native is Rohtas, Bihar from where i have
+                        completed my schooling. I have been placed at Samsung Semiconductor India Research as digital
+                        design engineer.</p>
+                    <div class="tab-tile">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>PROGRAMMING</span><br>Verilog, SystemVerilog, OOPS, Python, C, MATLAB, UNIX</li>
+                            <li><span>TOPICS</span><br>Computer Architecture, STA, Digital/Analog Electronics,VMM , AMBA
+                                Protocols, UART/I2C/SPI, Arduino, 8051/8086</li>
+                            <li><span>TOOLS</span><br><span>Digital<br></span>Xilinx ISE, Cadence Genus, IcarusVerilog
+                                and GTKWAVE.<br><span>Analog</span><br>Cadence Virtuoso, Synopsys Custom
+                                Compiler.<br><span>Mixed Signal</span><br>
+                                LTSpice, eSIM</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>EA Office Bearer</span><br>Organizing academic events for ECE branch.<br>We have
+                                organized workshops on Python,
+                                MATLAB and quizes on pre-placement
+                                activities, etc.<br> I was the speaker of RTL Workshop at KLE
+                                Technological University and VLSI Overview
+                                at MJCET, Hyderabad.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2023</span><br>KLE Technological University <span>(Engineering)</span></li>
+                            <li><span>2017-2019</span><br>Mother Khazani Convent School New Delhi
+                                <span>(InterMediate)</span>
+                            </li>
+                            <li><span>2004-2017</span><br>GEMS English School <span>(Primary And Secondary)</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------Services--------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>RTL Design</h2>
+                    <p>Register-transfer-level abstraction is used in hardware description languages (HDLs) like Verilog
+                        and VHDL to create high-level representations of a circuit, from which lower-level
+                        representations and ultimately actual wiring can be derived. Design at the RTL level is typical
+                        practice in modern digital design.</p>
+                    <a href="https://github.com/sidhantp1906/FCFS_Arbiter_Design_And_Verification">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Digital Verification</h2>
+                    <p>Design verification is the most important aspect of the product development process, consuming as
+                        much as 80% of the total product development time. The
+                        intent is to verify that the design meets the system requirements and specifications.</p>
+                    <a href="https://github.com/sidhantp1906/FCFS_Arbiter_Design_And_Verification">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Physical Design</h2>
+                    <p>Physical design is the process of turning a design into manufacturable geometries. It comprises a
+                        number of steps, including floorplanning, placement, clock tree synthesis, and routing.</p>
+                    <a href="https://github.com/sidhantp1906/FCFS_Arbiter_Design_And_Verification">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------portfolio------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="fimg .jpeg">
+                    <div class="layer">
+                        <h3>RISC-V Core</h3>
+                        <p>Designed 5-stage pipelinedRV32I core forfew ofthe arithmetic andmemory instruction sets like
+                            add,load and store, etc using Verilog HDL which
+                            is verified using python based(CoCoTB) verification module and currently
+                            verifying using UVM architecture.</p>
+                        <a href="https://github.com/sidhantp1906/RV32I"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="rimg.jpeg" height="100%">
+                    <div class="layer">
+                        <h3>ML Accelerator</h3>
+                        <p>Research and design of SVM
+                            training and classification digital architecture which classifies between
+                            diabetic and non diabetic person based on glucose level. This work will be
+                            published by the end of this year.</p>
+                        <a href="https://www.linkedin.com/in/sidhant-priyadarshi-028612185/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="timg.jpeg">
+                    <div class="layer">
+                        <h3>Design Verifaction</h3>
+                        <p>Designed a FCFS Arbiter to grant request to 4 processes based on first
+                            come first serve algorithm using Verilog HDL, verfied using VMM based
+                            verification and synthesized using Genus and Backend is done in Innovus.</p>
+                        <a href="https://github.com/sidhantp1906/FCFS_Arbiter_Design_And_Verification"><i
+                                class="fa-brands fa-square-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/sidhant-priyadarshi-028612185/" class="btn">See More</a>
+            </div>
+        </div>
+    </div>
+    <!-- ---------contact-------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>sidhant1922@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>+91 9560121498</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/sidhant_priyadarshi/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sidhant-priyadarshi-028612185/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/sidhantp1906"><i class="fa-brands fa-github"></i></a>
+                        <!-- <a href="#"><i class="fa-solid fa-envelope"></i></a> -->
+                    </div>
+                    <a href="my.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> Sidhant Priyadarshi</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyWRN8BI_L0FMGQnXGB1NVtO3uhgpcMxTzD5JfszRcr-WBxy0sbGEtmgtCZk5vYeVtx9Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
